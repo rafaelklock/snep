@@ -1,5 +1,8 @@
 #!/bin/bash
 
+apt update
+apt install git -y --force-yes
+
 git clone https://bitbucket.org/snepdev/snep-3.git /var/www/html/snep3
 
 cp /var/www/html/snep/ /var/www/html/snep-bkp-${RANDOM}/
